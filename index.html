@@ -1,0 +1,27 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pretraining Causal Structure under Its Own Rollout</title><style>
+:root{--fg:#16181d;--mut:#5d646e;--line:#e3e6ea;--bg:#fbfbfc}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+ font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;line-height:1.5}
+header{max-width:1180px;margin:0 auto;padding:44px 22px 10px}
+h1{font-size:26px;font-weight:650;letter-spacing:-.01em;margin:0 0 6px}
+header p{margin:0;color:var(--mut);font-size:15px}
+main{max-width:1180px;margin:0 auto;padding:8px 22px 70px}
+h2{font-size:15px;font-weight:600;text-transform:uppercase;letter-spacing:.07em;color:var(--mut);
+ margin:38px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.grid{display:grid;gap:22px}
+.g1{grid-template-columns:1fr}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g2{grid-template-columns:repeat(2,1fr)}
+figure{margin:0}
+video{width:100%;display:block;border-radius:7px;background:#000;border:1px solid var(--line)}
+figcaption{margin-top:7px;font-size:13.5px;color:var(--mut)}
+figcaption b{color:var(--fg);font-weight:600}
+footer{max-width:1180px;margin:0 auto;padding:0 22px 60px;color:var(--mut);font-size:13px}
+@media (max-width:860px){.g3,.g2{grid-template-columns:1fr}}
+</style></head><body>
+<header><h1>Pretraining Causal Structure under Its Own Rollout</h1><p>Streaming rollouts from a natively causal video world model trained from random initialisation.</p></header><main>
+<h2>Action conditioned rollouts</h2><div class="grid g2"><figure><video src="videos/ncw_language_table.mp4" muted loop autoplay playsinline controls preload="metadata"></video><figcaption>Action conditioned rollout, Language-Table domain</figcaption></figure><figure><video src="videos/ncw_bridge_1.mp4" muted loop autoplay playsinline controls preload="metadata"></video><figcaption>Action conditioned rollout, Bridge-V2 domain</figcaption></figure><figure><video src="videos/ncw_bridge_2.mp4" muted loop autoplay playsinline controls preload="metadata"></video><figcaption>Action conditioned rollout, Bridge-V2 domain</figcaption></figure><figure><video src="videos/ncw_droid.mp4" muted loop autoplay playsinline controls preload="metadata"></video><figcaption>Action conditioned rollout, DROID domain</figcaption></figure><figure><video src="videos/ncw_general.mp4" muted loop autoplay playsinline controls preload="metadata"></video><figcaption>Long rollout on general video</figcaption></figure></div>
+</main><footer>Lixuan He. Every rollout is generated one chunk at a time under a rolling cache.</footer></body></html>
